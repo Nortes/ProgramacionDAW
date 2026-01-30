@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Información básica -->
+    <title>Cronología</title>
+    <meta name="description" content="Descripción de la web">
+    <meta name="author" content="Miguel Ángel Nortes Coll">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <!-- SEO -->
+    <meta name="keywords" content="Separado con comas">
+
+    <!-- Icono -->
+    <link rel="icon" type="image/png" href="img/poulet_mystique.png">
+
+    <!-- Tipografía -->
+    <link rel="stylesheet" href="">
+
+    <!-- Open Graph para redes -->
+    <meta property="og:title" content="Titulo">
+    <meta property="og:description" content="Breve descripcion">
+    <meta property="og:image" content="imgs/preview.png">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img src="img/poulet_mystique.png" alt="Logo de la empresa"></a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="proyecto-reservas.html">Proyecto</a></li>
+                <li><a href="cronologia.html">Cronologia</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="non-index ">
+         <table>
+      <caption>Cronología del proyecto (plan de trabajo por fases)</caption>
+
+      <thead>
+        <tr>
+          <th scope="col">Fase</th>
+          <th scope="col">Descripción</th>
+          <th scope="col">Fecha de Inicio</th>
+          <th scope="col">Fecha Fin</th>
+          <th scope="col">Estado</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <!-- BLOQUE 1: Descubrimiento -->
+        <tr>
+          <th scope="rowgroup" rowspan="2">1. Descubrimiento</th>
+          <td>Reunión inicial con stakeholders, definición de objetivos, alcance y criterios de éxito.</td>
+          <td>2026-01-12</td>
+          <td>2026-01-13</td>
+          <td class="estado">Planificado</td>
+        </tr>
+        <tr>
+          <td>Auditoría rápida del estado actual (infraestructura, procesos, seguridad, puntos de dolor).</td>
+          <td>2026-01-14</td>
+          <td>2026-01-16</td>
+          <td class="estado">Planificado</td>
+        </tr>
+
+        <!-- BLOQUE 2: Análisis y diseño (con subfase usando colspan) -->
+        <tr>
+          <th scope="rowgroup" rowspan="3">2. Análisis y diseño</th>
+          <td>Levantamiento de requisitos (funcionales y no funcionales), riesgos y dependencias.</td>
+          <td>2026-01-19</td>
+          <td>2026-01-23</td>
+          <td class="estado">Planificado</td>
+        </tr>
+        <tr>
+          <td>
+            Diseño de solución: arquitectura, integraciones, datos y plan de migración (si aplica).
+          </td>
+          <td>2026-01-26</td>
+          <td>2026-01-30</td>
+          <td class="estado">Planificado</td>
+        </tr>
+        <tr>
+          <td>
+            <strong>Hito:</strong> Aprobación de diseño por cliente y cierre del alcance.
+          </td>
+          <td>2026-02-02</td>
+          <td>2026-02-02</td>
+          <td class="estado">Planificado</td>
+        </tr>
+
+        <!-- BLOQUE 3: Implementación (subtareas) -->
+        <tr>
+          <th scope="rowgroup" rowspan="3">3. Implementación</th>
+          <td>Configuración de entornos (dev/staging), CI/CD, repositorios y controles de acceso.</td>
+          <td>2026-02-03</td>
+          <td>2026-02-06</td>
+          <td class="estado">Planificado</td>
+        </tr>
+        <tr>
+          <td>Desarrollo / parametrización (módulos, APIs, automatizaciones, dashboards).</td>
+          <td>2026-02-09</td>
+          <td>2026-02-27</td>
+          <td class="estado">Planificado</td>
+        </tr>
+        <tr>
+          <td>Hardening básico: backups, logging, alertas y medidas mínimas de seguridad.</td>
+          <td>2026-03-02</td>
+          <td>2026-03-06</td>
+          <td class="estado">Planificado</td>
+        </tr>
+
+        <!-- BLOQUE 4: QA y validación (con una fila-resumen usando colspan) -->
+        <tr>
+          <th scope="rowgroup" rowspan="3">4. QA y validación</th>
+          <td>Pruebas internas (unitarias/integración) y corrección de incidencias.</td>
+          <td>2026-03-09</td>
+          <td>2026-03-13</td>
+          <td class="estado">Planificado</td>
+        </tr>
+        <tr>
+          <td>UAT con cliente (validación de requisitos, casos críticos, aceptación).</td>
+          <td>2026-03-16</td>
+          <td>2026-03-20</td>
+          <td class="estado">Planificado</td>
+        </tr>
+        <tr>
+          <td colspan="4">
+            <strong>Checklist de salida:</strong> requisitos aceptados, documentación mínima, plan de despliegue validado.
+          </td>
+        </tr>
+
+        <!-- BLOQUE 5: Despliegue y cierre -->
+        <tr>
+          <th scope="rowgroup" rowspan="2">5. Despliegue y cierre</th>
+          <td>Despliegue a producción, verificación post-release y monitorización inicial.</td>
+          <td>2026-03-23</td>
+          <td>2026-03-24</td>
+          <td class="estado">Planificado</td>
+        </tr>
+        <tr>
+          <td>Transferencia: handover, formación breve, documentación final y cierre del proyecto.</td>
+          <td>2026-03-25</td>
+          <td>2026-03-27</td>
+          <td class="estado">Planificado</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="5">Estados sugeridos: Planificado · En progreso · Bloqueado · Pendiente · Completado</td>
+        </tr>
+      </tfoot>
+    </table>
+    </main>
+    <footer class="site-footer">
+        <p>&copy; 2025 Miguel Ángel Nortes Coll / Poulet Mystique. Todos los derechos reservados.</p>
+
+        <nav class="footer-social">
+            <a href="https://x.com/?lang=es" target="_blank"><img src="img/logoX.png"
+                    alt="Enlace con el logo de X, el nuevo Twitter"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="img/logoInstagram.png"
+                    alt="Enlace con el logo de Instagram"></a>
+            <a href="https://github.com/" target="_blank"><img src="img/logoGithub.png"
+                    alt="Enlace con el logo de Github"></a>
+        </nav>
+
+        <a href="aviso_legal.html" class="legal_link">Aviso Legal</a>
+    </footer>
+</body>
+</html>

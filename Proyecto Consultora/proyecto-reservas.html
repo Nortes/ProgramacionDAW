@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Información básica -->
+  <title>Proyecto</title>
+  <meta name="description" content="Descripción de la web">
+  <meta name="author" content="Miguel Ángel Nortes Coll">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- Javascript -->
+  <script src="main.js" defer></script>
+
+  <!-- SEO -->
+  <meta name="keywords" content="Separado con comas">
+
+  <!-- Icono -->
+  <link rel="icon" type="image/png" href="img/poulet_mystique.png">
+
+  <!-- Tipografía -->
+  <link rel="stylesheet" href="">
+
+  <!-- Open Graph para redes -->
+  <meta property="og:title" content="Titulo">
+  <meta property="og:description" content="Breve descripcion">
+  <meta property="og:image" content="imgs/preview.png">
+  <meta property="og:type" content="website">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="img/poulet_mystique.png" alt="Logo de la empresa"></a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyecto-reservas.html">Proyecto</a></li>
+        <li><a href="cronologia.html">Cronologia</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="producto">
+
+    <main class="producto-panel" aria-live="polite">
+
+      <!-- Estado por defecto -->
+      <section id="detalle-intro" class="detalle is-active">
+        <h1>Nuestros planes de actuación</h1>
+        <div class="detalle--intro"></div>
+      </section>
+
+      <!-- Detalle Plan 1 -->
+      <section id="detalle-ruta" class="detalle" hidden>
+        <h2>Punto de Ruta (Diagnóstico de Decisión)</h2>
+        <p>
+          Analizamos tu empresa y te devolvemos un mapa de decisiones: qué hacer ahora, qué preparar después
+          y qué NO tocar todavía si no quieres pagar el precio.
+        </p>
+
+        <h3>Qué incluye</h3>
+        <ul>
+          <li>Mapa de decisiones (prioridad alta/media/baja).</li>
+          <li>Riesgos y dependencias: qué te bloquea y por qué.</li>
+          <li>Plan 30/90/180 días (corto y medio plazo).</li>
+          <li>Recomendación de enfoque técnico/procesos (si aplica).</li>
+          <li>Checklist de “esto no lo hagas todavía”.</li>
+        </ul>
+
+        <h3>Cuándo conviene</h3>
+        <ul>
+          <li>Estás creciendo y dudas en qué invertir primero.</li>
+          <li>Vas a migrar, escalar o “rehacer” algo crítico.</li>
+          <li>Quieres claridad antes de gastar tiempo/dinero.</li>
+        </ul>
+
+        <a class="btn-cta" href="contacto.html">Pedir Punto de Ruta</a>
+      </section>
+
+      <!-- Detalle Plan 2 -->
+      <section id="detalle-anual" class="detalle" hidden>
+        <h2>Acompañamiento Anual (Crecimiento Guiado)</h2>
+        <p>
+          No es un informe. Es un compromiso anual para que el crecimiento ocurra sin romper el sistema:
+          planificación, ajustes, seguimiento y criterio constante.
+        </p>
+
+        <h3>Cómo funciona</h3>
+        <ol>
+          <li>Definimos objetivos y métricas realistas.</li>
+          <li>Construimos un roadmap vivo (revisiones periódicas).</li>
+          <li>Te acompañamos en decisiones e implementación (prioridades y riesgos).</li>
+          <li>Medimos, ajustamos y mantenemos el rumbo.</li>
+        </ol>
+
+        <h3>Qué incluye</h3>
+        <ul>
+          <li>Revisión mensual (o por hitos) con informe breve.</li>
+          <li>Roadmap trimestral actualizado.</li>
+          <li>Soporte en priorización, deuda técnica y procesos.</li>
+          <li>Detección temprana de riesgos.</li>
+          <li>Plan anual con visión a largo plazo.</li>
+        </ul>
+
+        <a class="btn-cta" href="contacto.html">Hablar del plan anual</a>
+      </section>
+    </main>
+
+    <aside class="producto-selector">
+      <h3 class="selector-title">Planes</h3>
+
+      <button class="plan-card is-active" type="button" data-target="detalle-ruta" aria-controls="detalle-ruta"
+        aria-expanded="true">
+        <h4>Punto de Ruta</h4>
+        <p>Diagnóstico + mapa de decisiones para crecer a corto/medio plazo.</p>
+        <span class="plan-tag">1–3 semanas</span>
+      </button>
+
+      <button class="plan-card" type="button" data-target="detalle-anual" aria-controls="detalle-anual"
+        aria-expanded="false">
+        <h4>Tutoria Anual</h4>
+        <p>Copiloto continuo: roadmap vivo, ajustes y seguimiento durante 12 meses.</p>
+        <span class="plan-tag">12 meses</span>
+      </button>
+
+      <div class="aside-hint">
+        <p><strong>Tip:</strong> Si dudas, empieza por Punto de Ruta y luego escalas al anual.</p>
+      </div>
+    </aside>
+
+  </div>
+  <footer class="site-footer">
+    <p>&copy; 2025 Miguel Ángel Nortes Coll / Poulet Mystique. Todos los derechos reservados.</p>
+
+    <nav class="footer-social">
+      <a href="https://x.com/?lang=es" target="_blank"><img src="img/logoX.png"
+          alt="Enlace con el logo de X, el nuevo Twitter"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="img/logoInstagram.png"
+          alt="Enlace con el logo de Instagram"></a>
+      <a href="https://github.com/" target="_blank"><img src="img/logoGithub.png"
+          alt="Enlace con el logo de Github"></a>
+    </nav>
+
+    <a href="aviso_legal.html" class="legal_link">Aviso Legal</a>
+  </footer>
+</body>
+
+</html>
