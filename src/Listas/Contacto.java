@@ -1,8 +1,10 @@
+package Listas;
+
 public class Contacto {
     private final String name;
     private final String phoneNumber;
 
-    Contacto(String name, String phoneNumber) {
+    public Contacto(String name, String phoneNumber) {
         this.name = name;
         this.phoneNumber = phoneNumber;
     }

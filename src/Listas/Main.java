@@ -1,3 +1,6 @@
+import Listas.Contacto;
+import Listas.TelefonoMovil;
+
 private static final Scanner scanner = new Scanner(System.in);
 
 private static final TelefonoMovil miMovli = new TelefonoMovil("601116015");
@@ -62,7 +65,7 @@ private static void addNewContact() {
     Contacto newContact = new Contacto(nombreContacto, numeroContacto);
 
     if (miMovli.addNewContact(newContact)) {
-        IO.println("Contacto añadido correctamente.");
+        IO.println("ArrayList.Contacto añadido correctamente.");
     } else {
         IO.println("Error: no se pudo añadir (puede que ya exista).");
     }
@@ -87,7 +90,7 @@ private static void updateContact() {
     Contacto newContact = new Contacto(nombreContacto, numeroContacto);
 
     if (miMovli.updateContact(existingContact, newContact)) {
-        IO.println("Contacto actualizado correctamente.");
+        IO.println("ArrayList.Contacto actualizado correctamente.");
     } else {
         IO.println("Error: no se pudo actualizar el contacto.");
     }
@@ -104,7 +107,7 @@ private static void removeContact() {
     }
 
     if (miMovli.removeContact(existingContact)) {
-        IO.println("Contacto eliminado correctamente.");
+        IO.println("ArrayList.Contacto eliminado correctamente.");
     } else {
         IO.println("Error: no se pudo eliminar el contacto.");
     }
@@ -118,7 +121,7 @@ private static void queryContact() {
     if (contact == null) {
         IO.println("No se encontró el contacto.");
     } else {
-        IO.println("Contacto encontrado: " + contact.getName() +
+        IO.println("ArrayList.Contacto encontrado: " + contact.getName() +
                 " -> " + contact.getPhoneNumber());
     }
 }

@@ -1,3 +1,5 @@
+package Herencia;
+
 public class Impresora {
 
     private int toner;
