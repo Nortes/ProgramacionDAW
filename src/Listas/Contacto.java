@@ -23,7 +23,7 @@ public class Contacto {
 
    @Override
     public boolean equals(Object o) {
-       return this.name.equals(((Contacto) o).getName()) || this.phoneNumber.equals(((Contacto) o).getPhoneNumber());
+       return this.name.equals(((Contacto) o).getName());
    }
 
 }
