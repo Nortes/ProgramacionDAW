@@ -21,7 +21,7 @@ public class TelefonoMovil {
     }
 
     public boolean updateContact (Contacto antiguo,Contacto nuevo){
-        if(findContact(antiguo)<0){
+        if(findContact(antiguo)<0||findContact(nuevo)>=0){
             return false;
         }else {
             if (myContacts.contains(antiguo)) {
