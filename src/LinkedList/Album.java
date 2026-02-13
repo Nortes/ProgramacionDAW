@@ -52,12 +52,10 @@ public class Album {
     }
 
     public boolean addToPlayList(String titulo, LinkedList<Cancion> playList){
-        if(canciones!=null){
-            for(Cancion cancion:canciones){
-                if(cancion.getTitulo().equalsIgnoreCase(titulo)){
-                    playList.add(cancion);
-                    return true;
-                }
+        for (Cancion cancion : canciones) {
+            if (cancion.getTitulo().equalsIgnoreCase(titulo)) {
+                playList.add(cancion);
+                return true;
             }
         }
         return false;
