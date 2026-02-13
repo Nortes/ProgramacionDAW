@@ -18,7 +18,7 @@ public class Main {
                 """);
     }
 
-    // Imprimir playlist usando iteradores
+    // Imprimir playlist
     private static void printPlayList(LinkedList<Cancion> playList) {
         System.out.println("\n=== PLAYLIST ===");
         Iterator<Cancion> it = playList.iterator();
@@ -92,15 +92,14 @@ public class Main {
                         System.out.println("Estás al inicio de la playlist. No hay canción previa.");
                     }
                 }
-                case 3 -> { // repetir actual
-                    System.out.println("Repitiendo: " + current);
-                }
+                case 3 -> System.out.println("Repitiendo: " + current);
                 case 4 -> printPlayList(playList);
                 case 5 -> printMenu();
                 default -> System.out.println("Opción no válida.");
             }
         }
     }
+
     public static void main(String[] args) {
 
         // ===== base de datos musical
@@ -124,7 +123,7 @@ public class Main {
         album001.addCancion("All Hope Is Gone", 4.45);
 
         baseDeDatos.add(album001);
-        System.out.println(album001.toString());
+        System.out.println(album001);
 
         Album album002 = new Album("The Black Parade", "My Chemical Romance");
 
@@ -144,7 +143,7 @@ public class Main {
         album002.addCancion("Blood", 1.28);
 
         baseDeDatos.add(album002);
-        System.out.println(album002.toString());
+        System.out.println(album002);
 
         // Añadir por número de pista
         album001.addToPlayList(4, playList); // Psychosocial

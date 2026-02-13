@@ -18,6 +18,6 @@ public class Cancion {
     }
     @Override
     public String toString() {
-        return "Cancion{" +  titulo + ": " + duracion + '}';
+        return "Canción{" +  titulo + ": " + duracion + '}';
     }
 }

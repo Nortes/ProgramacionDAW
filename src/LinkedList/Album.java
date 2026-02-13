@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class Album {
     private final String album;
     private final String artista;
-    private ArrayList<Cancion> canciones;
+    private final ArrayList<Cancion> canciones;
 
     public Album(String album, String artista) {
         this.album = album;
@@ -67,7 +67,7 @@ public class Album {
     public String toString() {
       StringBuilder album = new StringBuilder("Album "+this.getAlbum()+" de "+this.getArtista()+"\n");
       for(int i=0;i<canciones.size();i++){
-          album.append(i+". "+canciones.get(i).toString()+"\n");
+          album.append(i).append(". ").append(canciones.get(i).toString()).append("\n");
       }
       return album.toString();
     }
