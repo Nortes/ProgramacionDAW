@@ -14,7 +14,8 @@ public class Main {
                 2 - Reproducir canción previa
                 3 - Repetir canción actual
                 4 - Imprimir lista de canciones en la playlist
-                5 - Volver a imprimir el menú
+                5 - Elimina la canción actual
+                6 - Volver a imprimir el menú
                 """);
     }
 
@@ -94,7 +95,30 @@ public class Main {
                 }
                 case 3 -> System.out.println("Repitiendo: " + current);
                 case 4 -> printPlayList(playList);
-                case 5 -> printMenu();
+                case 5 -> {
+                    if (current == null) {
+                        System.out.println("No hay canción para borrar.");
+                        break;
+                    }
+
+                    System.out.println(current+" ha sido eliminada.");
+                    iterator.remove(); // SOLO es seguro si current viene de un iterator.next/previous reciente
+
+                    if (iterator.hasNext()) {
+                        current = iterator.next();
+                        avance = true;
+                        System.out.println("Reproduciendo: " + current);
+                    } else if (iterator.hasPrevious()) {
+                        current = iterator.previous();
+                        avance = false;
+                        System.out.println("Reproduciendo: " + current);
+                    } else {
+                        current = null;
+                        System.out.println("Playlist vacía.");
+                        quit = true;
+                    }
+                }
+                case 6 -> printMenu();
                 default -> System.out.println("Opción no válida.");
             }
         }
